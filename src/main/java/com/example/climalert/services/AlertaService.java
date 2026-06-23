@@ -30,13 +30,13 @@ public class AlertaService {
       int hum = ultimoRegistro.getHumedad();
 
       if (temp > 35.0 && hum > 60) {
-        System.out.println("⚠️ ¡ALERTA! Superados los umbrales (Temp: " + temp + " / Hum: " + hum + "). Disparando correos...");
+        System.out.println("¡ALERTA! Superados los umbrales (Temp: " + temp + " - Hum: " + hum + "). Disparando correos...");
         emailService.enviarAlerta(temp, hum);
       } else {
-        System.out.println("✅ Análisis de clima: Todo normal. (Temp: " + temp + " / Hum: " + hum + ")");
+        System.out.println("Análisis de clima: Todo normal. (Temp: " + temp + " - Hum: " + hum + ")");
       }
     } else {
-      System.out.println("⏳ Análisis de clima: Aún no hay datos para procesar.");
+      System.out.println("Análisis de clima: Aún no hay datos para procesar.");
     }
   }
 }

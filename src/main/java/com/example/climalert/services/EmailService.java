@@ -17,7 +17,7 @@ public class EmailService {
     SimpleMailMessage mensaje = new SimpleMailMessage();
 
     mensaje.setTo("admin@clima.com", "emergencias@clima.com", "meteorologia@clima.com");
-    mensaje.setSubject("⚠️ ALERTA METEOROLÓGICA: Condiciones extremas");
+    mensaje.setSubject("ALERTA METEOROLÓGICA: Condiciones extremas");
 
     mensaje.setText("Se han detectado condiciones climáticas peligrosas en CABA:\n\n" +
         "Temperatura actual: " + temperatura + "°C\n" +
